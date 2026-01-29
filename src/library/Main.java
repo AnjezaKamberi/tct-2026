@@ -20,35 +20,35 @@ public class Main {
         library.addBook(book2);
         library.addBook(book3);
      
-//        try{
-//           
-//            
-//        }catch (IllegalArgumentException exception){
-//            System.out.println(exception.getMessage());
-//        }
-//
-//        try {
-//            library.findBook("15638");
-//        }catch (BookNotFoundException exception){
-//            System.out.println(exception.getMessage());
-//        }
-//
+        try{
+           
+            
+        }catch (IllegalArgumentException exception){
+            System.out.println(exception.getMessage());
+        }
+
+        try {
+            library.findBook("15638");
+        }catch (BookNotFoundException exception){
+            System.out.println(exception.getMessage());
+        }
+
         try{
             System.out.println("Best author: " + library.mostProductiveAuthor());
         } catch (BookNotFoundException exception) {
             System.out.println(exception.getMessage());
         }
 
-//        try{
-//         // ArrayList<Book> booksFound =   library.listOfBooksByAuthor(author2);
-//        	 ArrayList<Book> booksFound =   library.listOfBooksByAuthor(new Author("Martin", "Camaj"));
-//          System.out.println("U gjeten " + booksFound.size() + " libra.");
-//            for(Book book: booksFound) {
-//            	System.out.println(book);
-//            }
-//        }catch (BookNotFoundException exception){
-//            System.out.println(exception.getMessage());
-//        }
+        try{
+         // ArrayList<Book> booksFound =   library.listOfBooksByAuthor(author2);
+        	 ArrayList<Book> booksFound =   library.listOfBooksByAuthor(new Author("Martin", "Camaj"));
+          System.out.println("U gjeten " + booksFound.size() + " libra.");
+            for(Book book: booksFound) {
+            	System.out.println(book);
+            }
+        }catch (BookNotFoundException exception){
+            System.out.println(exception.getMessage());
+        }
 
     }
 }
